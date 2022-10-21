@@ -1,0 +1,40 @@
+
+<%- include partials/header.ejs %>
+<header>
+<%- include partials/main_nav.ejs %>
+</header>
+  <!-- It checks if the user as entered or pressed that specific title-->
+  <!-- then it will check if it is true or false and if it is true then it will link you to the specific ejs.-->
+  <!-- I got the idea from Janeshasharma  -->
+
+  <% if(title == "Home") { %> 
+    <%- include partials/home %>
+  <%} else if(title == "About") { %> 
+    <%- include partials/about %>
+  <%} else if(title == "Services") { %> 
+    <%- include partials/services %>
+  <%} else if(title == "Projects") { %> 
+    <%- include partials/projects %>
+    <%} else if(title == "Contact_me") { %> 
+      <%- include partials/Contact_me %>
+  <% } %>   
+   
+  <style>
+    body { 
+     background-color: #d04e4e;
+     color: #444;
+   }
+  </style>       
+
+  <%- include partials/buttom_nav.ejs %>
+ 
+  <%- include partials/footer.ejs %>
+
+
+
+
+
+
+
+
+
